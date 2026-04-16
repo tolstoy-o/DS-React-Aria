@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Universal Colors — fixed, never change */
+:root {
+  --color-text-dark:    #111111;
+  --color-text:         #444444;
+  --color-text-light:   #888888;
+  --color-bg:           #F2F2F2;
+  --color-divider:      #E2E2E2;
+  --color-input-border: #CCCCCC;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #444444;
+  background: #F2F2F2;
+}
+
+[data-focus-visible] {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
